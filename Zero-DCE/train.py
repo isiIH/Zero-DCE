@@ -144,9 +144,9 @@ def get_args():
     parser.batch_size = 8
     parser.lr = 1e-4
     parser.load = False
-    parser.pretrain_dir = "checkpoints/best_model_epoch_47.pth"
+    parser.pretrain_dir = "checkpoints/best_model.pth"
     parser.val = 0.2
-    parser.image_path = "/content/Zero-DCE_extension/Zero-DCE++/data/train_data/"
+    parser.image_path = "../data/train_data/"
     parser.checkpoint_folder = "checkpoints/"
     parser.num_workers = 2
     parser.weight_decay = 1e-4

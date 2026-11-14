@@ -39,10 +39,10 @@ def test_wo_ref(checkpoint_path, image_dir, save_path=None):
     print(f"  NIQE (↓) : {total_niqe / n:.4f}")
 
 if __name__ == "__main__":
-    checkpoint_path = "checkpoints/best_model_epoch_47.pth"
+    checkpoint_path = "checkpoints/best_model_dce_net.pth"
     dataset = "real"
-    image_dir = "data/test_data/" + dataset + "/"
-    save_path = "data/results/" + dataset + "/"
+    image_dir = "../data/test_data/" + dataset + "/"
+    save_path = "results/" + dataset + "/"
     Path(save_path).mkdir(parents=True, exist_ok=True)
 
     test_wo_ref(checkpoint_path, image_dir, save_path)
